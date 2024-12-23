@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE MicroStripline_lib MicroStripline_lib
+ASSIGN MicroStripline_lib libMode shared

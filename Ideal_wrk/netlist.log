@@ -1,0 +1,84 @@
+; Top Design: "NLSCT_lib:ParallelStub:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="NLSCT_lib:ParallelStub:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:TermG1  N__0 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__1 0 Num=2 Z=(10.64 - j * 32.04) Ohm Noise=yes 
+TLIN:TL1  N__0 Open1 Z=50.0 Ohm E=707.04 F=X GHz 
+TLIN:TL2  Open1 N__1 Z=50.0 Ohm E=12.96 F=X GHz 
+TLIN:TL3  N__5 Open1 Z=50.0 Ohm E=114.12 F=X GHz 
+
+X=3.5
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.5 GHz Stop=6.5 GHz Step=0.01 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+TLIN:TL4  N__7 Open2 Z=50.0 Ohm E=65.88 F=X GHz 
+TLIN:TL5  Open2 N__2 Z=50.0 Ohm E=110.52 F=X GHz 
+TLIN:TL6  N__6 Open2 Z=50.0 Ohm E=609.48 F=X GHz 
+TLIN:TL7  N__16 Short1 Z=50.0 Ohm E=24.48 F=X GHz 
+S_Param:SP2 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP2_stim" OutputPlan="SP2_Output" 
+
+SweepPlan: SP2_stim Start=0.5 GHz Stop=6.5 GHz Step=0.01 GHz 
+
+OutputPlan:SP2_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:TermG3  N__6 0 Num=3 Z=50 Ohm Noise=yes 
+Port:TermG4  N__2 0 Num=4 Z=(10.64 - j * 32.04) Ohm Noise=yes 
+TLIN:TL8  Short1 N__9 Z=50.0 Ohm E=12.96 F=X GHz 
+TLIN:TL9  N__10 Short1 Z=50.0 Ohm E=707.04 F=X GHz 
+mGND:mGND2  N__11 
+S_Param:SP3 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP3_stim" OutputPlan="SP3_Output" 
+
+SweepPlan: SP3_stim Start=0.5 GHz Stop=6.5 GHz Step=0.01 GHz 
+
+OutputPlan:SP3_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:TermG5  N__10 0 Num=5 Z=50 Ohm Noise=yes 
+Port:TermG6  N__9 0 Num=6 Z=(10.64 - j * 32.04) Ohm Noise=yes 
+TLIN:TL10  N__11 Short2 Z=50.0 Ohm E=155.88 F=X GHz 
+TLIN:TL11  Short2 N__13 Z=50.0 Ohm E=12.96 F=X GHz 
+TLIN:TL12  N__14 Short2 Z=50.0 Ohm E=707.04 F=X GHz 
+mGND:mGND1  N__16 
+S_Param:SP4 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP4_stim" OutputPlan="SP4_Output" 
+
+SweepPlan: SP4_stim Start=0.5 GHz Stop=6.5 GHz Step=0.01 GHz 
+
+OutputPlan:SP4_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:TermG7  N__14 0 Num=7 Z=50 Ohm Noise=yes 
+Port:TermG8  N__13 0 Num=8 Z=(10.64 - j * 32.04) Ohm Noise=yes 

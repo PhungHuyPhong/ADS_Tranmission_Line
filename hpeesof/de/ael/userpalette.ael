@@ -1,0 +1,4 @@
+if (list_undefined("de_define_library_palette();") == NULL) 
+de_define_library_palette("", SCHEM_WIN, "analogRF_net", "m", "m", -2, list("", "MatchDG_QuarterWaveMatch", "", "Place Multi-Section Quarter Wave Impedance Matching SmartComponent", "Match_QuarterWaveMatch"));
+else
+de_define_palette_group(SCHEM_WIN, "analogRF_net", "m", "m", -2, "MatchDG_QuarterWaveMatch", "Place Multi-Section Quarter Wave Impedance Matching SmartComponent", "Match_QuarterWaveMatch");

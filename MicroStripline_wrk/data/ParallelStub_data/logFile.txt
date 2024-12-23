@@ -1,0 +1,28 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+Warning detected by hpeesofsim in Substrate model during netlist flattening.
+    Simulations referencing substrate `MSub1' will not include metal loss
+    because metal thickness is zero.
+Done with exporting 1 VerilogA device(s).
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 3
+
+Pt DC convergence is used.
+
+SP SP1[1] <MicroStripline_lib:ParallelStub:schematic>   freq=(500 MHz->6.5 GHz)
+
+
+SP SP2[1] <MicroStripline_lib:ParallelStub:schematic>   freq=(500 MHz->6.5 GHz)
+
+
+SP SP3[1] <MicroStripline_lib:ParallelStub:schematic>   freq=(500 MHz->6.5 GHz)
+
+
+SP SP4[1] <MicroStripline_lib:ParallelStub:schematic>   freq=(500 MHz->6.5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.23 seconds.
+

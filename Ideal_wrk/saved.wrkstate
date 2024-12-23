@@ -1,0 +1,8 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic view="schematic" x1="-8" cell="ParallelStub" y1="-8" width="1920" height="1017" geom="1,0,2,46,69,1536,832,1920,1080" lib="NLSCT_lib"/>
+        <DDS name="ParallelStub.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

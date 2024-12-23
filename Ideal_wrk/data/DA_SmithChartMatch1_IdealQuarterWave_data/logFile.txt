@@ -1,0 +1,18 @@
+
+hpeesofsim (*) 490.shp Nov 12 2018, MINT version 4
+    (64-bit windows built: Tue Nov 13, 2018 02:20:54 +0000)
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 2
+
+Error detected by hpeesofsim during SP analysis `SP1'.
+    Port termination required for SP analysis.
+
+
+-------------------------------------------------------------------------------
+Simulation finished with errors.
+-------------------------------------------------------------------------------
+
+Resource usage:
+  Total stopwatch time     =     0.53 seconds.
+
